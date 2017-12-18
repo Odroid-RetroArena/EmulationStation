@@ -14,10 +14,8 @@ LIST(APPEND CMAKE_MODULE_PATH
 
 #-------------------------------------------------------------------------------
 #set up OpenGL system variable
-if(GLES)
     set(GLSystem "OpenGL ES" CACHE STRING "The OpenGL system to be used")
-elseif(GL)
-    set(GLSystem "Desktop OpenGL" CACHE STRING "The OpenGL system to be used")
+
 #-------------------------------------------------------------------------------
 #check if we're running on Raspberry Pi
 elseif(EXISTS "/opt/vc/include/bcm_host.h")
