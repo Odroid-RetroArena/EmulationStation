@@ -27,7 +27,7 @@ elseif(EXISTS "/opt/vc/include/bcm_host.h")
 elseif(EXISTS "/usr/lib/libMali.so" OR
     EXISTS "/usr/lib/arm-linux-gnueabihf/libMali.so" OR
     EXISTS "/usr/lib/aarch64-linux-gnu/libMali.so" OR
-    EXISTS "/usr/lib/arm-linux-gnueabihf/mali-egl/libmali.so" OR
+    EXISTS "/usr/lib/arm-linux-gnueabihf/egl-current/libmali.so" OR
     EXISTS "/usr/lib/arm-linux-gnueabihf/libmali.so")
     MESSAGE("libMali.so found")
     set(GLSystem "OpenGL ES" CACHE STRING "The OpenGL system to be used")
